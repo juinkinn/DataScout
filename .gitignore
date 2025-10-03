@@ -44,7 +44,6 @@ kaggle.json
 *.seed
 *.pid.lock
 
-# Node.js (nếu sau này có frontend)
 node_modules/
 npm-debug.log*
 yarn-debug.log*

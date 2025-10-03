@@ -1,0 +1,16 @@
+alembic
+dotenv
+faiss-cpu
+fastapi
+google-genai
+uvicorn
+pandas
+pymongo
+kaggle
+psycopg2-binary
+pytest
+python-multipart
+requests
+sentence-transformers
+sqlalchemy
+uvicorn
