@@ -2,11 +2,12 @@ alembic
 dotenv
 faiss-cpu
 fastapi
-google-genai
+google-generativeai
+kaggle
 uvicorn
 pandas
+pinecone
 pymongo
-kaggle
 psycopg2-binary
 pytest
 python-multipart

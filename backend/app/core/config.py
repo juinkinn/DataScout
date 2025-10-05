@@ -19,5 +19,7 @@ class Settings:
     DB_PORT = os.getenv("DB_PORT", "")
     DB_NAME = os.getenv("DB_NAME", "")
 
+    PINECONE_API_KEY: str = os.getenv("PINECONE_API_KEY", "")
+
     
 settings = Settings()
