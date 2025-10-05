@@ -14,4 +14,5 @@ python-multipart
 requests
 sentence-transformers
 sqlalchemy
+streamlit
 uvicorn

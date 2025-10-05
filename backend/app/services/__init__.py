@@ -1,2 +1,3 @@
-from .kaggle_service import search_kaggle, download_kaggle
+from .kaggle_service import search_kaggle
+from .dataset_service import add_dataset_to_collection
 from .text_handle_service import embed_text

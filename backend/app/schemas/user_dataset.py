@@ -1,14 +1,15 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class UserDatasetBase(BaseModel):
     dataset_ref: str
     collection_name: str
 
 class UserDatasetCreate(UserDatasetBase):
-    pass
+    source: Optional[str] = "kaggle"
 
-class UserDataset(UserDatasetBase):
+class UserDatasetResponse(UserDatasetBase):
     id: int
     user_id: int
     status: str

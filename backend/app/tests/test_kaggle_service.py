@@ -1,6 +1,6 @@
 import os
 import pytest
-from app.services.kaggle_service import search_kaggle, download_kaggle
+from app.services import search_kaggle, add_dataset_to_collection
 
 def test_search_kaggle():
     results = search_kaggle("iris")
@@ -10,9 +10,9 @@ def test_search_kaggle():
     assert "title" in results[0]
     assert "url" in results[0]
 
-def test_download_kaggle(tmp_path):
+def test_add_dataset_to_collection(tmp_path):
     dataset_ref = "uciml/iris"
-    result = download_kaggle(dataset_ref, "iris_collection")
+    result = add_dataset_to_collection(dataset_ref, "iris_collection")
 
     assert result["inserted"] > 0
     assert result["collection"] == "iris_collection"

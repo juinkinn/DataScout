@@ -12,13 +12,6 @@ class Settings:
     MONGO_DB: str = os.getenv("MONGO_DB", "kaggle_datasets")
     POSTGRES_URL: str = os.getenv("POSTGRESQL_URL", "")
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    
-    DB_USER = os.getenv("DB_USER", "")
-    DB_PASSWORD = os.getenv("DB_PASSWORD", "")
-    DB_HOST = os.getenv("DB_HOST", "")
-    DB_PORT = os.getenv("DB_PORT", "")
-    DB_NAME = os.getenv("DB_NAME", "")
-
     PINECONE_API_KEY: str = os.getenv("PINECONE_API_KEY", "")
 
     
