@@ -18,6 +18,4 @@ python-multipart
 requests
 sentence-transformers
 sqlalchemy
-streamlit
-streamlit_cookies_manager
 uvicorn
