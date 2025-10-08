@@ -27,7 +27,6 @@ def create_user_dataset(db: Session, user_id: int, data: UserDatasetCreate):
     db_entry = UserDataset(
         user_id=user_id,
         dataset_ref=data.dataset_ref,
-        collection_name=data.collection_name,
         status="imported",
         created_at=datetime.utcnow(),
     )

@@ -12,6 +12,9 @@ class Conversation(Base):
     updated_at = Column(TIMESTAMP, default=datetime.utcnow)
     messages = relationship("Message", back_populates="conversation")
 
+    user = relationship("User", back_populates="conversations")
+
+
 class Message(Base):
     __tablename__ = "messages"
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)

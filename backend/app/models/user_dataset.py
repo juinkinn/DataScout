@@ -7,6 +7,5 @@ class UserDataset(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, index=True)
     dataset_ref = Column(String, nullable=False)  
-    collection_name = Column(String, nullable=False)
     status = Column(String, default="ready")
     created_at = Column(DateTime(timezone=True), server_default=func.now())

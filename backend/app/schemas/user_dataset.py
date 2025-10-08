@@ -4,7 +4,6 @@ from typing import Optional
 
 class UserDatasetBase(BaseModel):
     dataset_ref: str
-    collection_name: str
 
 class UserDatasetCreate(UserDatasetBase):
     source: Optional[str] = "kaggle"
